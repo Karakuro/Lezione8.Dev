@@ -4,7 +4,8 @@
     {
         public int ShelfId { get; set; }
         public required string Name { get; set; }
-        public required string Genre { get; set; }
+        public int? GenreId { get; set; }
         public List<Book>? Books { get; set; }
+        public Genre? Genre { get; set; }
     }
 }

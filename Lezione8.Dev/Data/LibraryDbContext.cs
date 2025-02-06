@@ -11,5 +11,6 @@ namespace Lezione8.Dev.Data
 
         public DbSet<Book> Books { get; set; }
         public DbSet<Shelf> Shelves { get; set; }
+        public DbSet<Genre> Genres { get; set; }
     }
 }
