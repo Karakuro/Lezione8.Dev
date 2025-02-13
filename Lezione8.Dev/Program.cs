@@ -11,6 +11,8 @@ string connStr = builder.Configuration.GetConnectionString("Default")
                 ?? "Data Source=Library.db";
 
 builder.Services.AddSqlite<LibraryDbContext>(connStr);
+//Cambiare con AddTransient per vedere le due inizializzazioni
+builder.Services.AddScoped<Logger>();
 
 var app = builder.Build();
 

@@ -9,9 +9,11 @@ namespace Lezione8.Dev.Controllers
     public class GenreController : ControllerBase
     {
         private readonly LibraryDbContext _ctx;
-        public GenreController(LibraryDbContext ctx)
+        private readonly Logger _logger;
+        public GenreController(LibraryDbContext ctx, Logger logger)
         {
             _ctx = ctx;
+            _logger = logger;
         }
 
         [HttpGet]
